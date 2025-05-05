@@ -35,7 +35,7 @@ public class SignInputAPI {
 		
 		try {
 			manager.sendServerPacket(player, signUse);
-		} catch (InvocationTargetException e) {
+		} catch (Exception e) {
 			e.printStackTrace();
 		}
 	}
