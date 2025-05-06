@@ -48,7 +48,7 @@ public class SelectionScreen implements Listener{
 	private Inventory selectionScreen;
 	private ArrayList<String> removers = new ArrayList<String>();
 	
-	private int CREATE = 46;
+	private int CREATE = 45;
 	
 	public void setup(){
 		this.pl = CoinFlipper.getMain();
