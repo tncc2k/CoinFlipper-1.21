@@ -48,8 +48,6 @@ public class SelectionScreen implements Listener{
 	private Inventory selectionScreen;
 	private ArrayList<String> removers = new ArrayList<String>();
 	
-	private int CREATE = 45;
-	
 	public void setup(){
 		this.pl = CoinFlipper.getMain();
 		selectionScreen = Bukkit.createInventory(new SelectionScreenHolder(), 54, Message.GUI_SELECTION.getMessage());
@@ -78,8 +76,6 @@ public class SelectionScreen implements Listener{
 		help.setItemMeta(helpM);
 		selectionScreen.setItem(49, help);
 		
-		selectionScreen.setItem(CREATE, ItemUtils.createItem(CustomMaterial.SELECTION_CREATE.getMaterial(), Message.CREATE.getMessage(), 
-				CustomMaterial.SELECTION_CREATE.getData()));
 	}
 	
 	public void openGameManager(Player p){
