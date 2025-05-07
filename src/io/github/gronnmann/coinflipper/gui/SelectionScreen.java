@@ -133,6 +133,10 @@ public class SelectionScreen implements Listener{
 			side = Message.HEADS.getMessage();
 		}
 		lore.add(Message.MENU_HEAD_SIDE.getMessage().replace("%SIDE%", side));
+		lore.add(Message.MENU_HEAD_LORE_1.getMessage());
+		lore.add(Message.MENU_HEAD_LEFT_CLICK.getMessage());
+		lore.add(Message.MENU_HEAD_RIGHT_CLICK.getMessage());
+		lore.add(Message.MENU_HEAD_LORE_2.getMessage());
 		sm.setLore(lore);
 		sm.setDisplayName(Message.MENU_HEAD_GAME.getMessage().replace("%ID%", b.getID()+""));
 		skull.setItemMeta(sm);
