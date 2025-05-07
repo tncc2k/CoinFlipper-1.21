@@ -91,7 +91,7 @@ public class HistoryManager{
 						int colorId = won ? 5 : 14;
 						
 						
-						ItemStack historyId = ItemUtils.createItem(Material.STAINED_GLASS_PANE, Message.HISTORY_GAME.getMessage().replaceAll("%id%", id+""), colorId);
+						ItemStack historyId = ItemUtils.createItem(Material.BOOK, Message.HISTORY_GAME.getMessage().replaceAll("%id%", id+""), colorId);
 						
 						Date timeDate = new Date(time);
 						
