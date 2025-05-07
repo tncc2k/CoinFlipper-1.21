@@ -212,6 +212,10 @@ public class CreationGUI implements Listener{
 		ItemUtils.addToLore(headNew, Message.MENU_HEAD_PLAYER.getMessage().replace("%PLAYER%", player.getName()));
 		ItemUtils.addToLore(headNew, Message.MENU_HEAD_MONEY.getMessage().replace("%MONEY%", GeneralUtils.getFormattedNumbers(data.getMoney())));
 		ItemUtils.addToLore(headNew, Message.MENU_HEAD_SIDE.getMessage().replace("%SIDE%", side));
+		ItemUtils.addToLore(headNew, "&f");
+		ItemUtils.addToLore(headNew, "&7---------------------------------");
+		ItemUtils.addToLore(headNew, "&aNhấp chuột để tạo ván cược.");
+		ItemUtils.addToLore(headNew, "&7----------------------------------");
 		
 		inv.setItem(BET_FINALIZE, headNew);
 		
