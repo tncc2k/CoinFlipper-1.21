@@ -37,9 +37,9 @@ public class CreationGUI implements Listener{
 		return gui;
 	}
 	
-	private int BET_FINALIZE = 44, BET_AMOUNT = 8, BET_SIDE = 26;
-	private int MON_1 = 0, MON_10 = 1, MON_100 = 2, MON_1000 = 3, MON_10000 = 4, MON_100000 = 6, MON_CUSTOM = 5;
-	private int SIDE_HEADS = 18, SIDE_TAILS = 19;
+	private int BET_FINALIZE = 40, BET_AMOUNT = 13, BET_SIDE = 31;
+	private int MON_1 = 1, MON_10 = 2, MON_100 = 3, MON_1000 = 4, MON_10000 = 5, MON_100000 = 6, MON_CUSTOM = 7;
+	private int SIDE_HEADS = 21, SIDE_TAILS = 23;
 	private int BACK = 36;
 	
 	
@@ -64,8 +64,8 @@ public class CreationGUI implements Listener{
 		
 		preset.setItem(MON_CUSTOM,ItemUtils.addToLore(ItemUtils.createItem(CustomMaterial.CREATION_MONEY.getMaterial(), c + Message.CREATION_MONEY_CUSTOM.getMessage(), CustomMaterial.CREATION_MONEY.getData()), Message.CREATION_MONEY_CUSTOM_DESC.getMessage()));
 		
-		preset.setItem(SIDE_HEADS, ItemUtils.createItem(CustomMaterial.CREATION_SIDE_HEADS.getMaterial(), ChatColor.AQUA + Message.HEADS.getMessage().toUpperCase(), CustomMaterial.CREATION_SIDE_HEADS.getData()));
-		preset.setItem(SIDE_TAILS, ItemUtils.createItem(CustomMaterial.CREATION_SIDE_TAILS.getMaterial(), ChatColor.AQUA + Message.TAILS.getMessage().toUpperCase(), CustomMaterial.CREATION_SIDE_TAILS.getData()));
+		preset.setItem(SIDE_HEADS, ItemUtils.createItem(CustomMaterial.CREATION_SIDE_HEADS.getMaterial(), ChatColor.YELLOW + Message.HEADS.getMessage().toUpperCase(), CustomMaterial.CREATION_SIDE_HEADS.getData()));
+		preset.setItem(SIDE_TAILS, ItemUtils.createItem(CustomMaterial.CREATION_SIDE_TAILS.getMaterial(), ChatColor.YELLOW + Message.TAILS.getMessage().toUpperCase(), CustomMaterial.CREATION_SIDE_TAILS.getData()));
 		
 		preset.setItem(BACK, ItemUtils.createItem(CustomMaterial.BACK.getMaterial(), Message.BACK.getMessage(), CustomMaterial.BACK.getData()));
 	}
