@@ -137,7 +137,7 @@ public class CreationGUI implements Listener{
 		CreationData data = this.data.get(e.getWhoClicked().getName());
 		if (data == null)return;
 		
-		if (e.getSlot() <= 4){
+		if (e.getSlot() >= 1 && e.getSlot() <= 5) {
 			double money = Double.parseDouble(ChatColor.stripColor(e.getInventory()
 					.getItem(e.getSlot()).getItemMeta().getDisplayName()).replaceAll("[^\\d]", ""));
 			
